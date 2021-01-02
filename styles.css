@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 000000000000000000000000000000 GABARIT PROJET SYNTHÈSE 2020 00000000000000000 */
+
+
+/* 000000000000000000000000000000 NE PAS MODIFIER 000000000000000000000000000000 */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, menu, nav, section, audio, video {
+margin: 0;
+border: 0;
+font-size: 100%;
+}
+body {
+-webkit-text-size-adjust: none;
+-webkit-font-smoothing: antialiased;
+}
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+html {
+scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO BODY OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+body {
+background-color: #f0f0f0;
+color: #2a2a2a;
+font-family: 'Lato', sans-serif;
+font-size: 1.125rem;
+line-height: 1.6875rem;
+}
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO TITRES OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+h1 {
+font-family: 'Righteous', cursive;
+font-size: 3.25rem;
+line-height: 3.25rem;
+font-weight: 400;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 0.5rem;
+padding: 0 2rem;
+color: #f0f0f0;
+}
+
+h2 {
+font-family: 'Righteous', cursive;
+font-size: 2.25rem;
+line-height: 2.25rem;
+font-weight: 400;
+text-transform: uppercase;
+margin-bottom: 3rem;
+text-align: center;
+color: #f0f0f0;
+}
+
+h3 {
+font-family: 'Lato', sans-serif;
+font-size: 1.5rem;
+line-height: 2.25rem;
+font-weight: 400;
+text-align: center;
+margin: auto;
+margin-bottom: 0.25rem;
+color: #f0f0f0;	
+}
+
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO NAV OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+nav {
+display: block;
+position: fixed; /* changer pour scroll au besoin */
+top: 0;
+width: 100%;
+background-color: #161616;
+padding: 1rem;
+overflow: hidden; /* NE PAS MODIFIER */
+z-index: 999; /* laisser tel quel pour avoir la navigation par dessus le contenu */
+
+}
+
+#logo_nav {
+float: left;
+width: 1.8rem;
+height: 1.8rem;
+background-image: url("images/logo_nl.svg");
+background-position: center center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+#menu {
+width: 1.8rem;
+height: 1.8rem;
+float: right;
+padding: 0;
+font-size: 1.8rem;
+text-align: center;
+}
+
+#menu a i {color: #03BAB5; text-decoration: none;}
+
+#menu a i:active {color: #05EDE5; text-decoration: none;}
+
+
+
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO HEADER OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+header {
+display: block;
+vertical-align: top;
+position: relative;
+width: 100%;
+height: 100vh;
+text-align: center;
+padding: 6rem 1.5rem 1.5rem 1.5rem;
+background-image: url("images/header.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center top;
+}
+
+
+
+/* Utiliser seulement pour un DIV : position précise du titre au centre ou au bas du HEADER */
+.position_titre {
+position: absolute;
+left:0;
+right:0;
+bottom: 0;
+margin: auto;
+vertical-align: bottom;
+margin-bottom: 30vh;
+}
+
+/* Contrôle de la position de la flêche dans le HEADER */
+.position_fleche {
+text-align: center; 
+position: absolute;
+left:0;
+right:0;
+bottom: 0;
+margin: auto;
+vertical-align: bottom;
+margin-bottom: 15vh;
+font-size: 3rem;
+}
+
+/* Contrôle la couleur de l’hyperlien sur la flêche  */
+.position_fleche a {
+color: #03bab5;
+text-decoration: none;
+}
+
+.position_fleche a:active  {
+color: #05EDE5;
+text-decoration: none;
+}
+
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO SECTIONS OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO SECTION INTRO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.section_intro {
+display: block;
+width: 100%;
+padding: 4rem 1.5rem;
+background-color: #f0f0f0;
+color: #2a2a2a;
+}
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO SECTION BIOGRAPHIE OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.section_biographie {
+display: block;
+width: 100%;
+padding: 4rem 1.5rem;
+background-color: #2a2a2a;
+color: #f0f0f0;
+}
+
+.section_biographie p {
+margin-top: 3rem;
+}
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO SECTION DÉMARCHE ARTISTIQUE OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.section_demarche {
+display: block;
+width: 100%;
+padding: 4rem 1.5rem;
+background-color: #f0f0f0;
+color: #2a2a2a;
+}
+
+.section_demarche p {
+margin-top: 3rem;
+}
+
+.section_demarche h2 {
+color: #2a2a2a;
+}
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO SECTION RÉALISATIONS OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.section_realisations {
+display: block;
+width: 100%;
+padding: 4rem 1.5rem;
+background-color: #2a2a2a;
+color: #f0f0f0;
+}
+
+.expos_alt_top {
+display: block;
+width: 100%;
+min-height: 18rem;
+vertical-align: top;
+position: relative;
+background-image: url(images/expos.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+}
+
+.parutions_alt_top {
+margin-top: 3rem;
+display: block;
+width: 100%;
+min-height: 18rem;
+vertical-align: top;
+position: relative;
+background-image: url(images/parutions.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+}
+
+a .section_realisations_alt_texte_bottom {
+width: 100%;	
+padding: 1rem 1rem;
+text-align: center;
+font-size: 1.25rem;
+line-height: 1.875rem;
+font-weight: 700;
+text-transform: uppercase;
+color: #f0f0f0;	
+background-color: rgba(3,186,181,0.9);
+position: absolute; /* NE PAS MODIFIER */
+bottom: 0; /* NE PAS MODIFIER */
+vertical-align: bottom; /* NE PAS MODIFIER */
+}
+
+a:active .section_realisations_alt_texte_bottom {
+background-color: rgba(5,237,229,0.8); 
+} 
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO FOOTER OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+footer {
+display: block;
+width: 100%;
+padding-top: 4rem;
+background-color: #f0f0f0;
+text-align: center;
+}
+
+footer p { margin-top: 3.5rem;}
+
+footer a {
+color: #03bab5;
+font-weight: 700;
+}
+
+footer a:active {color: #05EDE5;}
+footer a:visited {color: #03bab5;}
+
+.position_icones {
+margin: auto;
+text-align: center;
+font-size: 3rem;
+}
+
+/* Contrôle l’espacement et le retrait gauche des icônes de médias sociaux */
+footer li {display: inline-block; margin-right: 0.3rem;}
+footer ul {margin-left: -2rem;}
+
+footer a i {color: #03bab5;}
+footer i:active {color: #05EDE5;}
+
+.retour_haut {
+background-color: #2a2a2a;
+margin-top: 4rem;
+font-size: 3rem;
+padding: 0.5rem 0;
+}
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO BOUTONS OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* position et apparence boite bouton */
+.bouton_turquoise {
+border: none;
+border-radius: 4px;
+margin: auto;
+margin-top: 3rem;
+text-align: center;
+padding: 0.5rem 2rem 0.5rem 2rem;
+max-width: 75%;
+}
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOO ÉTATS DU BOUTON OOOOOOOOOOOOOOOOOOOOOOOOOO */
+a {
+text-decoration: none;
+}
+
+a .bouton_turquoise {
+background-color: rgba(3,186,181,1);
+font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+font-size: 1rem;
+font-weight: 700;
+color: #FFFFFF;
+}
+
+a:active .bouton_turquoise {
+background-color: #05EDE5;
+}
+
+
+
+
+
+
+
+
